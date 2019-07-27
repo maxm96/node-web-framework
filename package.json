@@ -13,7 +13,8 @@
   "author": "CIS 526 Class",
   "license": "MIT",
   "devDependencies": {
-    "jest": "^24.8.0"
+    "jest": "^24.8.0",
+    "node-mocks-http": "^1.7.6"
   },
   "dependencies": {
     "uuid": "^3.3.2"

@@ -101,7 +101,7 @@ test('HTTP method should not match interchangeably', (done) => {
   var res = {
     setHeader: function (key, value) {},
     end: (body) => {
-      expect(mockFunction.mock.calls.lenth).toBeFalsy()
+      expect(mockFunction.mock.calls.length).toBeFalsy()
       done()
     }
   }

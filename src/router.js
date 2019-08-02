@@ -105,11 +105,11 @@ module.exports = class Router {
   route(req, res) {
     const method = req.method
     const path = url.parse(req.url).pathname
-    
     for (var route of this.routes[method]) {
       var match = route.regexp.exec(path)
       
       if (match) {
+        
         var params = {}
         route.keys.forEach((key, index) => {
           params[key] = match[index + 1]
